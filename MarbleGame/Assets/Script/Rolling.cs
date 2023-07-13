@@ -5,41 +5,70 @@ using UnityEngine;
 public class Rolling : MonoBehaviour
 {
     private Rigidbody rigid;
+    private RaycastHit hit;
+
     public float power = 1;
-    private float random;
+    public float random;
 
 
     Coroutine coroutine;
     void Start()
     {
-        rigid = GetComponent<Rigidbody>();
+        rigid = this.GetComponent<Rigidbody>();
         rigid.isKinematic = true;
+        
     }
 
     private void Awake()
     {
-        //coroutine = StartCoroutine(spin());
+        
     }
 
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (rigid.velocity.x == 0 && rigid.velocity.z == 0)
         {
-            random = Random.RandomRange(50, 100);
-            //StopCoroutine(coroutine);
-            rigid.isKinematic = false;
-            rigid.AddForce(new Vector3(1, 0.7f, 1) * power, ForceMode.Impulse);
-            rigid.AddTorque(new Vector3(1, 0, 1) * random, ForceMode.Impulse);
-        }
-    }
+            if (Physics.Raycast(this.transform.position, transform.up, out hit, 2f))
+            {
+                GameManager.Instance.Dice_Num = 5;
+                GameManager.Instance.Dice_num.gameObject.SetActive(true);
+            }
 
-    IEnumerator spin()
-    {
-        while (true)
-        {
-            this.transform.Rotate(1, 0, 1);
-            yield return null;
+            if (Physics.Raycast(this.transform.position, -1 * (transform.up), out hit, 2f))
+            {
+                GameManager.Instance.Dice_Num = 2;
+                GameManager.Instance.Dice_num.gameObject.SetActive(true);
+            }
+
+            if (Physics.Raycast(this.transform.position, transform.forward, out hit, 2f))
+            {
+                GameManager.Instance.Dice_Num = 6;
+                GameManager.Instance.Dice_num.gameObject.SetActive(true);
+            }
+
+            if (Physics.Raycast(this.transform.position, -1 * (transform.forward), out hit, 2f))
+            {
+                GameManager.Instance.Dice_Num = 1;
+                GameManager.Instance.Dice_num.gameObject.SetActive(true);
+            }
+
+            if (Physics.Raycast(this.transform.position, transform.right, out hit, 2f))
+            {
+                GameManager.Instance.Dice_Num = 3;
+                GameManager.Instance.Dice_num.gameObject.SetActive(true);
+            }
+
+            if (Physics.Raycast(this.transform.position, -1 * (transform.right), out hit, 2f))
+            {
+                GameManager.Instance.Dice_Num = 4;
+                GameManager.Instance.Dice_num.gameObject.SetActive(true);
+            }
+
+            
         }
+        
+
+        
     }
 }
