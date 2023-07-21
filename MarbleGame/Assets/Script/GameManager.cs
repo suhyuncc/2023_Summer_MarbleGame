@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
             throughPower = 1 + 0.2f * ((int)(slider.value * 10) + 1);
 
             Dice.GetComponent<Rigidbody>().isKinematic = false;
-            Dice.GetComponent<Rigidbody>().AddForce(new Vector3(1, 0.7f, 1) * throughPower, ForceMode.Impulse);
+            Dice.GetComponent<Rigidbody>().AddForce(new Vector3(1.7f, 0.7f, 1) * throughPower, ForceMode.Impulse);
             //Dice.GetComponent<Rigidbody>().AddTorque(new Vector3(1, 0, 1) * random, ForceMode.Impulse);
             Dice.GetComponent<Rigidbody>().angularVelocity = new Vector3(1, 0, 1) * random;
         }
