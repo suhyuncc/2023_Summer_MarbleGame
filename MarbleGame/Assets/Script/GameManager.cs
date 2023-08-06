@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     public float throughPower;
     public int Dice_Num;
 
+    public bool Dice_done;
+
     [Header("UI")]
     public Text Dice_num;
     public Text Slider_num;
@@ -34,10 +36,19 @@ public class GameManager : MonoBehaviour
         Dice.GetComponent<Rigidbody>().isKinematic = true;
         Dice_InitVec = Dice.transform.position;
         Dice_InitQuat = Dice.transform.rotation;
+        Dice_done = false;
     }
 
     void Update()
     {
+        if (Dice_done)
+        {
+            
+            Player.Instance.MoveNum = Dice_Num;
+            Dice_done = false;
+            DiceReset();
+        }
+
         if (Input.GetKeyUp(KeyCode.Space))
         {
             StopCoroutine(coroutine);
@@ -45,22 +56,26 @@ public class GameManager : MonoBehaviour
             random = Random.RandomRange(50, 1000);
             throughPower = 1 + 0.2f * ((int)(slider.value * 10) + 1);
 
+            Dice.GetComponent<Rolling>().isroll = false;
             Dice.GetComponent<Rigidbody>().isKinematic = false;
             Dice.GetComponent<Rigidbody>().AddForce(new Vector3(1.7f, 0.7f, 1) * throughPower, ForceMode.Impulse);
             //Dice.GetComponent<Rigidbody>().AddTorque(new Vector3(1, 0, 1) * random, ForceMode.Impulse);
             Dice.GetComponent<Rigidbody>().angularVelocity = new Vector3(1, 0, 1) * random;
         }
 
+        /*
         if (Input.GetKeyUp(KeyCode.R))
         {
             Dice.GetComponent<Rigidbody>().isKinematic = true;
             Dice.transform.position = Dice_InitVec;
             Dice.transform.rotation = Dice_InitQuat;
+            Dice.GetComponent<Rolling>().isroll = true;
             Dice_Num = 0;
             Dice_num.gameObject.SetActive(false);
             Gage.SetActive(true);
             coroutine = StartCoroutine(Slider());
         }
+        */
 
         Dice_num.text = Dice_Num.ToString();
         Slider_num.text = $"{(int)(slider.value * 10) +1}";
@@ -92,5 +107,17 @@ public class GameManager : MonoBehaviour
                 yield return new WaitForSeconds(0.001f);
             }
         }
+    }
+
+    private void DiceReset()
+    {
+        Dice.GetComponent<Rigidbody>().isKinematic = true;
+        Dice.transform.position = Dice_InitVec;
+        Dice.transform.rotation = Dice_InitQuat;
+        Dice.GetComponent<Rolling>().isroll = true;
+        Dice_Num = 0;
+        Dice_num.gameObject.SetActive(false);
+        Gage.SetActive(true);
+        coroutine = StartCoroutine(Slider());
     }
 }
