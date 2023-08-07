@@ -39,45 +39,49 @@ public class Rolling : MonoBehaviour
             {
                 GameManager.Instance.Dice_Num = 5;
                 GameManager.Instance.Dice_num.gameObject.SetActive(true);
-                GameManager.Instance.Dice_done = true;
+                Invoke("Done", 0.5f);
             }
 
             if (Physics.Raycast(this.transform.position, -1 * (transform.up), out hit, 2f))
             {
                 GameManager.Instance.Dice_Num = 2;
                 GameManager.Instance.Dice_num.gameObject.SetActive(true);
-                GameManager.Instance.Dice_done = true;
+                Invoke("Done", 0.5f);
             }
 
             if (Physics.Raycast(this.transform.position, transform.forward, out hit, 2f))
             {
                 GameManager.Instance.Dice_Num = 6;
                 GameManager.Instance.Dice_num.gameObject.SetActive(true);
-                GameManager.Instance.Dice_done = true;
+                Invoke("Done", 0.5f);
             }
 
             if (Physics.Raycast(this.transform.position, -1 * (transform.forward), out hit, 2f))
             {
                 GameManager.Instance.Dice_Num = 1;
                 GameManager.Instance.Dice_num.gameObject.SetActive(true);
-                GameManager.Instance.Dice_done = true;
+                Invoke("Done", 0.5f);
             }
 
             if (Physics.Raycast(this.transform.position, transform.right, out hit, 2f))
             {
                 GameManager.Instance.Dice_Num = 3;
                 GameManager.Instance.Dice_num.gameObject.SetActive(true);
-                GameManager.Instance.Dice_done = true;
+                Invoke("Done", 0.5f);
             }
 
             if (Physics.Raycast(this.transform.position, -1 * (transform.right), out hit, 2f))
             {
                 GameManager.Instance.Dice_Num = 4;
                 GameManager.Instance.Dice_num.gameObject.SetActive(true);
-                GameManager.Instance.Dice_done = true;
+                Invoke("Done", 0.5f);
             }
-
-            
         }
+    }
+
+    void Done()
+    {
+        GameManager.Instance.Dice_done = true;
+        CancelInvoke("Done");
     }
 }

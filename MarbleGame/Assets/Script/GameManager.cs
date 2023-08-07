@@ -43,7 +43,6 @@ public class GameManager : MonoBehaviour
     {
         if (Dice_done)
         {
-            
             Player.Instance.MoveNum = Dice_Num;
             Dice_done = false;
             DiceReset();
@@ -118,6 +117,6 @@ public class GameManager : MonoBehaviour
         Dice_Num = 0;
         Dice_num.gameObject.SetActive(false);
         Gage.SetActive(true);
-        coroutine = StartCoroutine(Slider());
+        //coroutine = StartCoroutine(Slider());
     }
 }

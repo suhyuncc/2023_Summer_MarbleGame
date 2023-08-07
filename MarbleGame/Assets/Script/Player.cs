@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
 
         if (Ismove)
         {
-            this.transform.position = Vector3.MoveTowards(gameObject.transform.position, lastposition.position, 0.1f);
+            this.transform.position = Vector3.MoveTowards(gameObject.transform.position, lastposition.position, 0.08f);
         }
     }
 
