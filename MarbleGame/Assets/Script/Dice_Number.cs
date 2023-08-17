@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class Dice_Number : MonoBehaviour
 {
-    private void OnDisable()
+    private void OnEnable()
     {
+        StartCoroutine("Wait");
         
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(0.5f);
+        GameManager.Instance.Dice_done = true;
     }
 }
