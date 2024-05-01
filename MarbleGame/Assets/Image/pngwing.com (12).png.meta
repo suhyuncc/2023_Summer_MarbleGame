@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 3f582e036a4c41c42b5f8c210aeffea2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pngwing.com (12)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 939
+        width: 157
+        height: 785
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1106affcded263c45aa6d75640070dad
+      internalID: -644771627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com (12)_1
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 939
+        width: 158
+        height: 785
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426af3e6026bb86449577ce921704230
+      internalID: 1690840866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com (12)_2
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 940
+        width: 157
+        height: 554
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058563ef76d23824db48d2125edefd18
+      internalID: -95562405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com (12)_3
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 1252
+        width: 568
+        height: 557
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: -43.5}
+        - {x: -182, y: -106.5}
+        - {x: -255, y: -278.5}
+        - {x: -284, y: -155.5}
+        - {x: -111, y: 278.5}
+        - {x: 281, y: 278.5}
+        - {x: 284, y: 49.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391afd971a76f6044a7c4fe8f8862150
+      internalID: 568526397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com (12)_4
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 66
+        width: 261
+        height: 1339
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -130.5, y: -669.5}
+        - {x: -112.5, y: 10.5}
+        - {x: -16.5, y: 280.5}
+        - {x: -62.5, y: 506.5}
+        - {x: -29.5, y: 669.5}
+        - {x: 130.5, y: 669.5}
+        - {x: 130.5, y: 528.5}
+        - {x: 88.5, y: -431.5}
+        - {x: -44.5, y: -669.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6aa539109ed084bb0aa9add9620b72
+      internalID: -1250077562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com (12)_5
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 694
+        width: 547
+        height: 865
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44.5, y: -432.5}
+        - {x: 27.5, y: -432.5}
+        - {x: 47.5, y: -236.5}
+        - {x: 183.5, y: -46.5}
+        - {x: 174.5, y: 177.5}
+        - {x: -63.5, y: 320.5}
+        - {x: -146.5, y: 285.5}
+        - {x: -273.5, y: 299.5}
+        - {x: -273.5, y: 432.5}
+        - {x: 273.5, y: 432.5}
+        - {x: 273.5, y: -103.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906d6ca238803e44389c4ccb14072568
+      internalID: 1803605400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com (12)_6
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 673
+        width: 679
+        height: 1113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 236.5, y: -556.5}
+        - {x: 147.5, y: -198.5}
+        - {x: 161.5, y: 50.5}
+        - {x: 259.5, y: 260.5}
+        - {x: 200.5, y: 418.5}
+        - {x: 76.5, y: 464.5}
+        - {x: -339.5, y: 370.5}
+        - {x: -332.5, y: 550.5}
+        - {x: 333.5, y: 550.5}
+        - {x: 339.5, y: -556.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d950de82205b0494c97fbbc9c47f5f42
+      internalID: 1501705483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com (12)_7
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 802
+        width: 355
+        height: 428
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96.5, y: -214}
+        - {x: -177.5, y: -9}
+        - {x: -177.5, y: 214}
+        - {x: 138.5, y: 210}
+        - {x: 177.5, y: -86}
+        - {x: 123.5, y: -198}
+        - {x: 20.5, y: -106}
+        - {x: -17.5, y: -214}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec60fbaa7cc7954bb63b4a6838861d7
+      internalID: -1375956198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com (12)_8
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 5
+        width: 509
+        height: 1243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -254.5, y: -621.5}
+        - {x: -245.5, y: -470.5}
+        - {x: -52.5, y: -170.5}
+        - {x: -141.5, y: 365.5}
+        - {x: -57.5, y: 621.5}
+        - {x: 254.5, y: 621.5}
+        - {x: 251.27844, y: 472.4431}
+        - {x: 99.5, y: 494.5}
+        - {x: -11.5, y: 352.5}
+        - {x: 125.5, y: -154.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4953698289ff874396120e339c7f71a
+      internalID: -1431074536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com (12)_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 157
+        height: 785
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c63adaa1ee7b79419c43e67673ebc70
+      internalID: -927626400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com (12)_10
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 8
+        width: 158
+        height: 785
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8ceb1b83c32c144b2f76ea92287576
+      internalID: -966054708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com (12)_11
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 406
+        width: 144
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e906143393b3fb8449ee5a3cf0e4de05
+      internalID: -1050816652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com (12)_12
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 12
+        width: 157
+        height: 554
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27ae4a66582b4e48a17dc24aea4980c
+      internalID: -606005848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com (12)_13
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 0
+        width: 409
+        height: 712
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ff994ae973cf9489c371d4f91238af
+      internalID: -528259160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com (12)_14
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 11
+        width: 144
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0feca8a18c3fdbd4fb89fe12c718b349
+      internalID: -821988345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      pngwing.com (12)_0: -644771627
+      pngwing.com (12)_1: 1690840866
+      pngwing.com (12)_10: -966054708
+      pngwing.com (12)_11: -1050816652
+      pngwing.com (12)_12: -606005848
+      pngwing.com (12)_13: -528259160
+      pngwing.com (12)_14: -821988345
+      pngwing.com (12)_2: -95562405
+      pngwing.com (12)_3: 568526397
+      pngwing.com (12)_4: -1250077562
+      pngwing.com (12)_5: 1803605400
+      pngwing.com (12)_6: 1501705483
+      pngwing.com (12)_7: -1375956198
+      pngwing.com (12)_8: -1431074536
+      pngwing.com (12)_9: -927626400
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

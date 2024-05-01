@@ -97,12 +97,12 @@ public class GameManager : MonoBehaviour
 
             if(sliderUp)
             {
-                slider.value += 0.3f * Time.deltaTime;
+                slider.value += 0.5f * Time.deltaTime;
                 yield return new WaitForSeconds(0.001f);
             }
             else
             {
-                slider.value -= 0.3f * Time.deltaTime;
+                slider.value -= 0.5f * Time.deltaTime;
                 yield return new WaitForSeconds(0.001f);
             }
         }
