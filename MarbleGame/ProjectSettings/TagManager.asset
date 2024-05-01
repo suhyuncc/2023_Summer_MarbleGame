@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Event_node
+  - Move_node
+  - Dest_node
   layers:
   - Default
   - TransparentFX

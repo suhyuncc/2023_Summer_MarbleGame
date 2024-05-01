@@ -46,7 +46,6 @@ public class Rolling : MonoBehaviour
             {
                 GameManager.Instance.Dice_Num = 2;
                 GameManager.Instance.Dice_num.gameObject.SetActive(true);
-                //GameManager.Instance.Dice_done = true;
             }
 
             if (Physics.Raycast(this.transform.position, transform.forward, out hit, 2f))

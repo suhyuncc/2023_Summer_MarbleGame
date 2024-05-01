@@ -6,9 +6,12 @@ using UnityEngine.UI;
 public class Node : MonoBehaviour
 {
     public Transform Next;
+    public GameObject Dest_node;
 
     [SerializeField]
     private GameObject nodeImage;
+
+    public bool isDest;
 
     private void OnTriggerStay(Collider other)
     {
@@ -16,7 +19,7 @@ public class Node : MonoBehaviour
             && !other.gameObject.GetComponent<Player>().Ismove)
         {
             Debug.Log("hi");
-            nodeImage.SetActive(true);
+            
         }
     }
 
@@ -28,9 +31,33 @@ public class Node : MonoBehaviour
         {
             if(this.tag == "Event_node")
             {
-                Debug.Log("hi");
+                nodeImage.SetActive(true);
             }
-            
+            else if (this.tag == "Move_node")
+            {
+                other.gameObject.GetComponent<Player>().Addposition = Dest_node.transform;
+                other.gameObject.GetComponent<Player>().Addmove = true;
+                Dest_node.GetComponent<Node>().isDest = true;
+
+
+            }
+            else if (this.tag == "Dest_node")
+            {
+                other.gameObject.GetComponent<Player>().Addmove = false;
+                
+                if (isDest)
+                {
+                    nodeImage.SetActive(true);
+                    isDest = false;
+                }
+                else
+                {
+                    GameManager.Instance.Turn_start = true;
+                }
+                
+            }
+
+
         }
     }
 }

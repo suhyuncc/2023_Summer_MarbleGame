@@ -8,9 +8,11 @@ public class Player : MonoBehaviour
 {
     public static Player Instance;
     public bool Ismove;
+    public bool Addmove;
     public int MoveNum;
 
     private Transform lastposition;
+    public Transform Addposition;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,11 @@ public class Player : MonoBehaviour
         if (Ismove)
         {
             this.transform.position = Vector3.MoveTowards(gameObject.transform.position, lastposition.position, 0.08f);
+        }
+
+        if (Addmove)
+        {
+            this.transform.position = Vector3.MoveTowards(gameObject.transform.position, Addposition.position, 0.08f);
         }
     }
 

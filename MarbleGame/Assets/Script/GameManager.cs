@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public int Dice_Num;
 
     public bool Dice_done;
+    public bool Turn_start;
 
     [Header("UI")]
     public Text Dice_num;
@@ -46,6 +47,13 @@ public class GameManager : MonoBehaviour
             Player.Instance.MoveNum = Dice_Num;
             Dice_done = false;
             DiceReset();
+        }
+
+        if (Turn_start)
+        {
+            Gage.SetActive(true);
+            coroutine = StartCoroutine(Slider());
+            Turn_start = false;
         }
 
         if (Input.GetKeyUp(KeyCode.Space))
@@ -116,7 +124,6 @@ public class GameManager : MonoBehaviour
         Dice.GetComponent<Rolling>().isroll = true;
         Dice_Num = 0;
         Dice_num.gameObject.SetActive(false);
-        Gage.SetActive(true);
-        coroutine = StartCoroutine(Slider());
+        
     }
 }

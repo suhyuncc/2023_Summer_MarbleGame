@@ -13,6 +13,7 @@ public class Dice_Number : MonoBehaviour
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(0.5f);
+        this.gameObject.SetActive(false);
         GameManager.Instance.Dice_done = true;
     }
 }
