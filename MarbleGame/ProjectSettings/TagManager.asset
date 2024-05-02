@@ -7,6 +7,7 @@ TagManager:
   - Event_node
   - Move_node
   - Dest_node
+  - End_node
   layers:
   - Default
   - TransparentFX

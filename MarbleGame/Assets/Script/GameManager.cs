@@ -10,13 +10,17 @@ public class GameManager : MonoBehaviour
 
     public GameObject Dice;
     public GameObject Gage;
+    public GameObject palyer_pool;
     private Coroutine coroutine;
+    private GameObject cur_player;
     private Vector3 Dice_InitVec = Vector3.zero;
     private Quaternion Dice_InitQuat = Quaternion.identity;
+    private int cur_player_index;
     public bool sliderUp;
     public int random;
     public float throughPower;
     public int Dice_Num;
+    public int max_players;
 
     public bool Dice_done;
     public bool Turn_start;
@@ -30,6 +34,13 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         coroutine = StartCoroutine(Slider());
+        cur_player_index = 0;
+        for(int i =0; i < max_players; i++)
+        {
+            palyer_pool.transform.GetChild(i).gameObject.SetActive(true);
+        }
+        //palyer_pool.transform.GetChild(0).gameObject.SetActive(true);
+        cur_player = palyer_pool.transform.GetChild(0).gameObject;
     }
 
     private void Awake()
@@ -44,7 +55,7 @@ public class GameManager : MonoBehaviour
     {
         if (Dice_done)
         {
-            Player.Instance.MoveNum = Dice_Num;
+            cur_player.GetComponent<Player>().MoveNum = Dice_Num;
             Dice_done = false;
             DiceReset();
         }
@@ -53,6 +64,7 @@ public class GameManager : MonoBehaviour
         {
             Gage.SetActive(true);
             coroutine = StartCoroutine(Slider());
+            player_setting();
             Turn_start = false;
         }
 
@@ -124,6 +136,20 @@ public class GameManager : MonoBehaviour
         Dice.GetComponent<Rolling>().isroll = true;
         Dice_Num = 0;
         Dice_num.gameObject.SetActive(false);
-        
+    }
+
+    private void player_setting()
+    {
+        cur_player_index++;
+        if (cur_player_index == max_players)
+        {
+            cur_player_index = 0;
+        }
+        cur_player = palyer_pool.transform.GetChild(cur_player_index).gameObject;
+
+        if (cur_player.GetComponent<Player>().isFin)
+        {
+            player_setting();
+        }
     }
 }
