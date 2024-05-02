@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject Dice;
     public GameObject Gage;
     public GameObject palyer_pool;
+    public Text drink;
     private Coroutine coroutine;
     private GameObject cur_player;
     private Vector3 Dice_InitVec = Vector3.zero;
@@ -21,6 +22,7 @@ public class GameManager : MonoBehaviour
     public float throughPower;
     public int Dice_Num;
     public int max_players;
+    public int drink_stack;
 
     public bool Dice_done;
     public bool Turn_start;
@@ -35,7 +37,8 @@ public class GameManager : MonoBehaviour
         Instance = this;
         coroutine = StartCoroutine(Slider());
         cur_player_index = 0;
-        for(int i =0; i < max_players; i++)
+        drink_stack = 0;
+        for (int i =0; i < max_players; i++)
         {
             palyer_pool.transform.GetChild(i).gameObject.SetActive(true);
         }
@@ -98,6 +101,7 @@ public class GameManager : MonoBehaviour
 
         Dice_num.text = Dice_Num.ToString();
         Slider_num.text = $"{(int)(slider.value * 10) +1}";
+        drink.text = $"´©Àû ÀÜ: {drink_stack}";
     }
 
     IEnumerator Slider()

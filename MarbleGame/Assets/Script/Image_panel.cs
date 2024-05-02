@@ -37,20 +37,30 @@ public class Image_panel : MonoBehaviour
                     Title.text = $"<{titles[0]}>";
                     Discript.text = discripts[0];
                 }
-                else if (ran > 60)
+                else if (ran > 75)
                 {
                     Title.text = $"<{titles[1]}>";
                     Discript.text = discripts[1];
                 }
-                else if (ran > 30)
+                else if (ran > 60)
                 {
                     Title.text = $"<{titles[2]}>";
                     Discript.text = discripts[2];
                 }
-                else
+                else if (ran > 45)
                 {
                     Title.text = $"<{titles[3]}>";
                     Discript.text = discripts[3];
+                }
+                else if (ran > 30)
+                {
+                    Title.text = $"<{titles[4]}>";
+                    Discript.text = discripts[4];
+                }
+                else
+                {
+                    Title.text = $"<{titles[5]}>";
+                    Discript.text = discripts[5];
                 }
                 break;
         }
@@ -60,6 +70,15 @@ public class Image_panel : MonoBehaviour
 
     private void OnDisable()
     {
+        switch (this.name)
+        {
+            case "Sneak":
+                GameManager.Instance.drink_stack = 0;
+                break;
+            case "Ladder":
+                GameManager.Instance.drink_stack++;
+                break;
+        }
         GameManager.Instance.Turn_start = true;
     }
 }
