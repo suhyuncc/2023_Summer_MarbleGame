@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589246, b: 0.2978263, a: 1}
+  m_IndirectSpecularColor: {r: 0.172768, g: 0.21589167, b: 0.29782546, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9618,17 +9618,17 @@ MonoBehaviour:
   - "\uB098\uBE7C\uACE0 \uB2E4\uB9C8\uC154!!"
   - "\uB9C8\uC154!!"
   - "\uB108 \uB9C8\uC154!!"
-  - 
-  - 
-  - 
+  - "\uC5C4\uC218\uD604 \uB9C8\uC154..."
+  - "\uCC9C\uC0AC\uCE74\uB4DC"
+  - "\uBB3B\uB354"
   discripts:
   - "\uC8FC\uC0AC\uC704\uB97C \uAD74\uB9B0 \uD300\uC744 \uC81C\uC678\uD55C \uC804\uC6D0
     \uD55C\uC794\uD574~"
   - "\uC8FC\uC0AC\uC704\uB97C \uAD74\uB9B0\uD300 \uC804\uC6D0 \uD55C\uC794\uD574~"
   - "\uC751~ \uB2C8\uAC00 \uB9C8\uC154~~(\uC9C0\uC815\uD300 \uB9C8\uC154!!)"
-  - 
-  - 
-  - 
+  - "\uD2B8\uB864 \uB9C8\uC154..\u3160"
+  - "\uC9C0\uC815\uD300 \uCC9C\uC0AC\uCE74\uB4DC"
+  - "\uB2E4\uC74C \uC794\uC218 2\uBC30"
   Title: {fileID: 851510940}
   Discript: {fileID: 1225728773}
 --- !u!1 &1847254745

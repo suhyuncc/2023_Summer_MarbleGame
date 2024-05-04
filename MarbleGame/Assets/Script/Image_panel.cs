@@ -37,22 +37,22 @@ public class Image_panel : MonoBehaviour
                     Title.text = $"<{titles[0]}>";
                     Discript.text = discripts[0];
                 }
-                else if (ran > 75)
+                else if (ran > 72)
                 {
                     Title.text = $"<{titles[1]}>";
                     Discript.text = discripts[1];
                 }
-                else if (ran > 60)
+                else if (ran > 54)
                 {
                     Title.text = $"<{titles[2]}>";
                     Discript.text = discripts[2];
                 }
-                else if (ran > 45)
+                else if (ran > 36)
                 {
                     Title.text = $"<{titles[3]}>";
                     Discript.text = discripts[3];
                 }
-                else if (ran > 30)
+                else if (ran > 18)
                 {
                     Title.text = $"<{titles[4]}>";
                     Discript.text = discripts[4];
